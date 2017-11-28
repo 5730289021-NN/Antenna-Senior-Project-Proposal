@@ -45,4 +45,9 @@ C.~A. Balanis, \emph{Antenna Theory: Analysis and Design}.\hskip 1em plus 0.5em
 N.~Kinayman, \emph{Modern Microwave Circuits}.\hskip 1em plus 0.5em minus
   0.4em\relax Artech House, 2005.
 
+\bibitem{CaM:81}
+K.~Carver and J.~Mink, ``Microstrip antenna technology,'' \emph{IEEE
+  Transactions on Antennas and Propagation}, vol.~29, no.~1, pp. 2--24, Jan
+  1981.
+
 \end{thebibliography}

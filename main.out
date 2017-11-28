@@ -1,20 +1,31 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Objectives}{}% 2
 \BOOKMARK [1][-]{section.3}{Methodology}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Dimension\040Design\040of\040the\040Microstrip\040Antenna}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Fringing\040Effect\040of\040the\040Microstrip\040Antenna}{section.3}% 5
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Length\040Extension}{subsection.3.2}% 6
-\BOOKMARK [2][-]{subsection.3.3}{Resonance\040frequency}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.4}{Q\040Factor}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.5}{Radiation\040Resistance}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Dimension Design of the Microstrip Antenna}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Fringing Effect of the Microstrip Antenna}{section.3}% 5
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Length Extension}{subsection.3.2}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Resonance frequency}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.4}{Q Factor}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.5}{Radiation Resistance}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.6}{Bandwidth}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.7}{Radiation\040Pattern}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.8}{Transmission\040Line\040Model}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.9}{Cavity\040Line\040Model}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.10}{Phased\040Array\040Antenna}{section.3}% 14
-\BOOKMARK [1][-]{section.4}{Preliminary\040results}{}% 15
-\BOOKMARK [2][-]{subsection.4.1}{Microstrip\040Antenna}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.2}{Array\040Antenna\040Patern}{section.4}% 17
-\BOOKMARK [1][-]{section.5}{Project\040overview}{}% 18
-\BOOKMARK [2][-]{subsection.5.1}{Scope\040of\040work}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.2}{Expected\040outcomes}{section.5}% 20
+\BOOKMARK [2][-]{subsection.3.7}{Radiation Pattern}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.8}{Transmission Line Model}{section.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Slot admittance}{subsection.3.8}% 13
+\BOOKMARK [3][-]{subsubsection.3.8.2}{Characteristic admittance}{subsection.3.8}% 14
+\BOOKMARK [3][-]{subsubsection.3.8.3}{Total Admittance \046 Resistance at Resonance frequency}{subsection.3.8}% 15
+\BOOKMARK [3][-]{subsubsection.3.8.4}{Resonance frequency}{subsection.3.8}% 16
+\BOOKMARK [3][-]{subsubsection.3.8.5}{Summary}{subsection.3.8}% 17
+\BOOKMARK [2][-]{subsection.3.9}{Cavity Line Model}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.9.1}{General form of electric field}{subsection.3.9}% 19
+\BOOKMARK [3][-]{subsubsection.3.9.2}{Nonradiating cavity with perfect open-circuit wall equation of electric field}{subsection.3.9}% 20
+\BOOKMARK [3][-]{subsubsection.3.9.3}{Wavenumber}{subsection.3.9}% 21
+\BOOKMARK [3][-]{subsubsection.3.9.4}{Nonradiating cavity with perfect open-circuit wall equation of magnetic field}{subsection.3.9}% 22
+\BOOKMARK [3][-]{subsubsection.3.9.5}{Mode Coefficient}{subsection.3.9}% 23
+\BOOKMARK [2][-]{subsection.3.10}{Phased Array Antena}{section.3}% 24
+\BOOKMARK [1][-]{section.4}{Preliminary results}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Simulation Application}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.2}{Microstrip Antenna}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.3}{Array Antenna Patern}{section.4}% 28
+\BOOKMARK [1][-]{section.5}{Project overview}{}% 29
+\BOOKMARK [2][-]{subsection.5.1}{Scope of work}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.2}{Expected outcomes}{section.5}% 31

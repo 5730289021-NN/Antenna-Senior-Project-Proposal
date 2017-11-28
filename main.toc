@@ -1,20 +1,31 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {section}{\numberline {2}Objectives}{2}{section.2}
-\contentsline {section}{\numberline {3}Methodology}{2}{section.3}
-\contentsline {subsection}{\numberline {3.1}Dimension Design of the Microstrip Antenna}{2}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Fringing Effect of the Microstrip Antenna}{2}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Length Extension}{2}{subsubsection.3.2.1}
-\contentsline {subsection}{\numberline {3.3}Resonance frequency}{3}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Q Factor}{3}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Radiation Resistance}{3}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Bandwidth}{3}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Radiation Pattern}{3}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Transmission Line Model}{3}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}Cavity Line Model}{3}{subsection.3.9}
-\contentsline {subsection}{\numberline {3.10}Phased Array Antenna}{3}{subsection.3.10}
-\contentsline {section}{\numberline {4}Preliminary results}{4}{section.4}
-\contentsline {subsection}{\numberline {4.1}Microstrip Antenna}{4}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Array Antenna Patern}{5}{subsection.4.2}
-\contentsline {section}{\numberline {5}Project overview}{6}{section.5}
-\contentsline {subsection}{\numberline {5.1}Scope of work}{6}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Expected outcomes}{6}{subsection.5.2}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Objectives}{3}{section.2}
+\contentsline {section}{\numberline {3}Methodology}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Dimension Design of the Microstrip Antenna}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Fringing Effect of the Microstrip Antenna}{3}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Length Extension}{3}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}Resonance frequency}{4}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Q Factor}{4}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Radiation Resistance}{4}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Bandwidth}{4}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Radiation Pattern}{4}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Transmission Line Model}{5}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Slot admittance}{5}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}Characteristic admittance}{5}{subsubsection.3.8.2}
+\contentsline {subsubsection}{\numberline {3.8.3}Total Admittance \& Resistance at Resonance frequency}{6}{subsubsection.3.8.3}
+\contentsline {subsubsection}{\numberline {3.8.4}Resonance frequency}{6}{subsubsection.3.8.4}
+\contentsline {subsubsection}{\numberline {3.8.5}Summary}{6}{subsubsection.3.8.5}
+\contentsline {subsection}{\numberline {3.9}Cavity Line Model}{7}{subsection.3.9}
+\contentsline {subsubsection}{\numberline {3.9.1}General form of electric field}{7}{subsubsection.3.9.1}
+\contentsline {subsubsection}{\numberline {3.9.2}Nonradiating cavity with perfect open-circuit wall equation of electric field}{7}{subsubsection.3.9.2}
+\contentsline {subsubsection}{\numberline {3.9.3}Wavenumber}{8}{subsubsection.3.9.3}
+\contentsline {subsubsection}{\numberline {3.9.4}Nonradiating cavity with perfect open-circuit wall equation of magnetic field}{8}{subsubsection.3.9.4}
+\contentsline {subsubsection}{\numberline {3.9.5}Mode Coefficient}{8}{subsubsection.3.9.5}
+\contentsline {subsection}{\numberline {3.10}Phased Array Antena}{8}{subsection.3.10}
+\contentsline {section}{\numberline {4}Preliminary results}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Simulation Application}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Microstrip Antenna}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Array Antenna Patern}{11}{subsection.4.3}
+\contentsline {section}{\numberline {5}Project overview}{12}{section.5}
+\contentsline {subsection}{\numberline {5.1}Scope of work}{12}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Expected outcomes}{12}{subsection.5.2}
