@@ -1,7 +1,7 @@
-PWD c:/Users/noraw/Documents/Senior Project
+PWD c:/Users/noraw/Documents/Senior Project/Template
 INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
-INPUT c:/Users/noraw/Documents/Senior Project/main.tex
-OUTPUT main.log
+INPUT c:/Users/noraw/Documents/Senior Project/Template/template.tex
+OUTPUT template.log
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/size11.clo
@@ -170,8 +170,6 @@ INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/latex/pgf/utilities/pgfcalen
 INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/latex/pgf/utilities/pgfcalendar.sty
 INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/generic/pgf/utilities/pgfcalendar.code.tex
 INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/generic/pgf/utilities/pgfcalendar.code.tex
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/indentfirst.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/indentfirst.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -193,11 +191,9 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
-INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/latex/esvect/esvect.sty
-INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/latex/esvect/esvect.sty
-INPUT main.aux
-INPUT main.aux
-OUTPUT main.aux
+INPUT template.aux
+INPUT template.aux
+OUTPUT template.aux
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss10.tfm
 INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/context/base/supp-pdf.mkii
 INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/context/base/supp-pdf.mkii
@@ -209,14 +205,14 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
-INPUT main.out
-INPUT main.out
-INPUT main.out
-INPUT main.out
-OUTPUT main.pdf
-INPUT ./main.out
-INPUT ./main.out
-OUTPUT main.out
+INPUT template.out
+INPUT template.out
+INPUT template.out
+INPUT template.out
+OUTPUT template.pdf
+INPUT ./template.out
+INPUT ./template.out
+OUTPUT template.out
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss17.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss12.tfm
@@ -242,98 +238,74 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/latex/esvect/uesvect.fd
-INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/latex/esvect/uesvect.fd
-INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm
-INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect8.tfm
-INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT main.toc
-INPUT main.toc
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT template.toc
+INPUT template.toc
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm
-INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
-OUTPUT main.toc
-INPUT figures/tmmodel.png
-INPUT ./figures/tmmodel.png
-INPUT ./figures/tmmodel.png
-INPUT ./figures/tmmodel.png
-INPUT ./figures/tmmodel.png
-INPUT figures/cavitymodel.png
-INPUT ./figures/cavitymodel.png
-INPUT ./figures/cavitymodel.png
-INPUT ./figures/cavitymodel.png
-INPUT ./figures/cavitymodel.png
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss8.tfm
-INPUT figures/microstrip_rad.png
-INPUT ./figures/microstrip_rad.png
-INPUT ./figures/microstrip_rad.png
-INPUT ./figures/microstrip_rad.png
-INPUT ./figures/microstrip_rad.png
-INPUT figures/fringingeffect.png
-INPUT ./figures/fringingeffect.png
-INPUT ./figures/fringingeffect.png
-INPUT ./figures/fringingeffect.png
-INPUT ./figures/fringingeffect.png
-INPUT figures/dielectivef.png
-INPUT ./figures/dielectivef.png
-INPUT ./figures/dielectivef.png
-INPUT ./figures/dielectivef.png
-INPUT ./figures/dielectivef.png
-INPUT figures/Impedance.png
-INPUT ./figures/Impedance.png
-INPUT ./figures/Impedance.png
-INPUT ./figures/Impedance.png
-INPUT ./figures/Impedance.png
-INPUT figures/Radiation_pattern.png
-INPUT ./figures/Radiation_pattern.png
-INPUT ./figures/Radiation_pattern.png
-INPUT ./figures/Radiation_pattern.png
-INPUT ./figures/Radiation_pattern.png
-INPUT figures/no_taper.png
-INPUT ./figures/no_taper.png
-INPUT ./figures/no_taper.png
-INPUT ./figures/no_taper.png
-INPUT ./figures/no_taper.png
-INPUT figures/with_taper.png
-INPUT ./figures/with_taper.png
-INPUT ./figures/with_taper.png
-INPUT ./figures/with_taper.png
-INPUT ./figures/with_taper.png
-INPUT main.bbl
-INPUT main.bbl
+OUTPUT template.toc
+INPUT figures/gm.eps
+INPUT ./figures/gm.eps
+INPUT ./figures/gm.eps
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm.eps
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT figures/brain.jpg
+INPUT ./figures/brain.jpg
+INPUT ./figures/brain.jpg
+INPUT ./figures/brain.jpg
+INPUT ./figures/brain.jpg
+INPUT figures/gm.eps
+INPUT ./figures/gm.eps
+INPUT ./figures/gm.eps
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm.eps
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss9.tfm
+INPUT figures/gm.eps
+INPUT ./figures/gm.eps
+INPUT ./figures/gm.eps
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm.eps
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT ./figures/gm-eps-converted-to.pdf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt10.tfm
+INPUT template.bbl
+INPUT template.bbl
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmssi10.tfm
-INPUT main.aux
-INPUT ./main.out
-INPUT ./main.out
+INPUT template.aux
+INPUT ./template.out
+INPUT ./template.out
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb
@@ -342,5 +314,5 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/esvect/vect10.pfb
-INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/esvect/vect10.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb

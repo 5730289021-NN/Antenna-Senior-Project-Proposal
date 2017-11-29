@@ -1,0 +1,18 @@
+\contentsline {paragraph}{\textbf Keywords:}{1}{section*.1}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Project Overview}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Objectives}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Scope of Work}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Expected Outcomes}{3}{subsection.2.3}
+\contentsline {section}{\numberline {3}Methodology}{3}{section.3}
+\contentsline {section}{\numberline {4}Results}{3}{section.4}
+\contentsline {section}{\numberline {5}Conclusions}{3}{section.5}
+\contentsline {section}{\numberline {6}Acknowledgement}{3}{section.6}
+\contentsline {section}{\numberline {7}List of LaTeX usage}{3}{section.7}
+\contentsline {subsection}{\numberline {7.1}Tables}{3}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Figures}{3}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Equations}{3}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}References}{4}{subsection.7.4}
+\contentsline {section}{\numberline {8}Appendices}{5}{section.8}
+\contentsline {subsection}{\numberline {8.1}Appendix A}{5}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Appendix B}{5}{subsection.8.2}

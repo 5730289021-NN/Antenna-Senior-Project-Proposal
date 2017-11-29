@@ -9,6 +9,8 @@
 \usepackage{hyperref}
 \usepackage{amsmath} % for large blaces
 \usepackage{esvect} % easy vector
+\usepackage{etoolbox} % for bibliography
+\patchcmd{\thebibliography}{\section*}{\section}{}{}
 
 \graphicspath{{figures/}} % create a director 'figures' in your local dir and all pics are kept here
 
@@ -34,16 +36,16 @@
   \tableofcontents
   \newpage
   \section{Introduction}
-    \indent Nowadays, antennas have been using in every wireless communication systems. It have been found out that microstrip patch is one of the most popular\cite{AkS} in the world. Also, the patch antenna is cost-effective and easy to fabricate\cite{AtT}. Many design approaches have been revealed for antenna engineers to follow the procedure. In order to obtain the precise dimension, a deep analysis might've be engaged.
-    \indent A phased array is the set of antennas that could be a formation as a line or a planar which could steer its beam electrically\cite{CoB:05} which means that the direction of the antenna can be control wthout moving any of the mechanic part. Therefore, this proposal is aiming on two of very interesting technologies in this era.
+    \indent Nowadays, antennas have been using in every wireless communication systems. It has been found out that microstrip patch is one of the most popular\cite{AkS} in the world. Also, the patch antenna is cost-effective and easy to fabricate\cite{AtT}. Many design approaches have been revealed for antenna engineers to follow the procedure. In order to obtain the precise dimension, a deep analysis might've been engaged.
+    \indent A phased array is the set of antennas that could be a formation as a line or a planar which could steer its beam electrically\cite{CoB:05} which means that the direction of the antenna can be controlled without moving any of the mechanic parts. Therefore, this proposal is aiming at two of very interesting technologies in this era.
 
   \section{Objectives}
-    \indent The propose of this work is mainly focus on analyzing and designing the 5.6 GHz planar phased array antenna based on methods which have been analyzed, formulated or derived in the past. 
+    \indent The propose of this work is mainly focused on analyzing and designing the 5.6 GHz planar phased array antenna based on methods which have been analyzed, formulated or derived in the past. 
 
   \section{Methodology}
     \indent This section will provide a full analysis of designing a microstrip antenna and a phased array antenna.
 
-    \subsection{Basic Dimension Design of the Microstrip Antenna}
+    \subsection{Basic Dimension Design of The Microstrip Antenna}
       \indent a dimension of microstrip antenna can be designed easily with this expressions\cite{NoK:05}.
       \begin{equation}
         L = \frac{c}{2f_0\sqrt{\epsilon_r\mu_r}} - 2\Delta l 
@@ -398,13 +400,15 @@
       \end{itemize}
 
     \subsection{Expected outcomes}
-      \indent It's expected that the simulation application and the application that come from other author
+      \indent It's expected that, the simulation application and the application that come from other author
       will have similar results. Also, the physical device should have a preliminary result like those simulation
       applications as well.
+    
+    \subsection{}
   
     \newpage
 
-    \bibliography{ref} 
-    \bibliographystyle{ieeetran}
+  \bibliography{ref} 
+  \bibliographystyle{ieeetran}
 
 \end{document}
