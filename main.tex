@@ -43,7 +43,7 @@
   \section{Methodology}
     \indent This section will provide a full analysis of designing a microstrip antenna and a phased array antenna.
 
-    \subsection{Dimension Design of the Microstrip Antenna}
+    \subsection{Basic Dimension Design of the Microstrip Antenna}
       \indent a dimension of microstrip antenna can be designed easily with this expressions\cite{NoK:05}.
       \begin{equation}
         L = \frac{c}{2f_0\sqrt{\epsilon_r\mu_r}} - 2\Delta l 
@@ -54,68 +54,12 @@
       \indent $\epsilon_r$ is the relative dielectric constant\\[1ex]
       \indent $\mu_r$ is the relative magnetic constant\\[1ex]
       \indent $c$ is the speed of light in free space\\[1ex]
-      \indent $\Delta l$ is the fringing effect at the edge of the antenna
+      \indent $\Delta l$ is the fringing effect at the edge of the antenna\\[3ex]
       \indent However from \cite{CoB:05} the best width should be
       \begin{equation}
         W = \frac {1} {2 f_r \sqrt{\mu_{0} \epsilon_{0}}}\sqrt{\frac{2}{\epsilon_{r} + 1}} = \frac{\upsilon_{0}}{2f_{r}}\sqrt{\frac{2}{\epsilon_{r} + 1}}
       \end{equation}
       \indent where $\upsilon_{0}$ is the free-space velocity of light
-
-    \subsection{Fringing Effect of the Microstrip Antenna}
-      \subsubsection {Length Extension} 
-      \begin{equation}
-        \frac{\Delta l}{h}=0.412\frac{(\epsilon_{r(eff)}+0.3)(\frac{W}{h} + 0.264)}{(\epsilon_{r(eff)}-0.258)(\frac{W}{h} + 0.8)}
-      \end{equation}
-      \indent The length is extended by $\Delta L$ on both side so $L_{eff} = L + 2\Delta L$
-
-    \subsection{Resonance frequency}
-      \indent In $TM_{010}$ mode, the resonant frequency is given by
-      \begin{equation}  
-        f_{r(010)} =  \frac{1}{2 L\sqrt{\epsilon_{r}}\sqrt{\epsilon_{\mu_{0}\epsilon_{0}}}}= \frac{\upsilon_{0}}{2L\sqrt{\epsilon_{r}}}
-      \end{equation}
-      \indent With fringing effect, the equation will be given by
-      \begin{equation} 
-        f_{r(010)} =  \frac{1}{2 L_{eff}\sqrt{\epsilon_{r(eff))}}\sqrt{\epsilon_{\mu_{0}\epsilon_{0}}}}=\frac{1}{2(L + 2\Delta L)\sqrt{\epsilon_{r(eff)}}\sqrt{\epsilon_{\mu_{0}\epsilon_{0}}}}
-      \end{equation}
-
-    \subsection{Q Factor}
-    \indent There are 4 main loss that should be considered\cite{NoK:05}
-      \begin{itemize}
-        \item $Q_{rad}$ is radiation loss due to a loss which propagates into a space
-          \begin{equation}
-            %\begin{aligned}
-              Q_{rad} = \frac{3}{16}\frac{\epsilon_r}{p}\frac{a_e}{b_e}\frac{\lambda_0}{h}\frac{1}{1-\frac{1}{\epsilon_r\mu_r}+\frac{2}{5\epsilon_r^2\mu_{r}^2}}
-            %\end{aligned}
-          \end{equation}
-          \indent where $a_e$,$b_e$,$h$ is the effective length, width and thickness of the antenna respectively,
-           $p$ is the ratio of the power that radiated by the patch antenna to the power radiated by an equivalent dipole\cite{NoK:05}
-        \item $Q_{sw}$ is surface-wave loss which represents the amount of power coupled into space waves
-          \begin{equation}
-            Q_{sw} = Q_{rad}(\frac{\eta_r^0}{1-\eta_r^0})
-          \end{equation}
-          \indent where $\eta_r^0$ is the radiation efficiency without dielectric or conductor loss
-        \item $Q_d$ is dielectric loss which defined as the ratio (or angle in a complex plane) of the lossy reaction to the electric field E in the curl equation to the lossless reaction
-          \begin{equation}
-            Q_d = \frac{1}{\tan\delta}
-          \end{equation}
-        \item $Q_c$ is metalization loss
-        \begin{equation}
-          Q_c = h\sqrt{\mu\pi{f}\sigma}
-        \end{equation}
-      \end{itemize}
-    \indent The total quality factor of the antenna can be given by using this formula.
-      \begin{equation}
-        \frac{1}{Q} = \frac{1}{Q_{rad}} + \frac{1}{Q_{sw}} + \frac{1}{Q_d} + \frac{1}{Q_c}
-      \end{equation}
-
-    \subsection{Radiation Resistance}
-      \indent Radiation Resistance defines how 
-        \begin{equation}
-          %%\frac{1}{Q} \cong \frac{1}{Q_{rad}} + \frac{1}{Q_{sw}} + \frac{1}{Q_d} + \frac{1}{Q_c}
-        \end{equation}
-    \subsection{Bandwidth}
-
-    \subsection{Radiation Pattern}
     
   \newpage
 
@@ -190,6 +134,7 @@
                 thickness and a dielectric constant $\epsilon_r$. With the relatively short thickness of the substrate,
                 the electric field will be in z-direction with $TM_{mn}$ interior modes so that\cite{CaM:81}
         \begin{equation}
+          \label{GeneralE}
           E_z = \sum_m\sum_n A_{mn}e_{mn}(x,y)
         \end{equation}
         \indent where $A_{mn}$ are the mode amplitude coefficients and $e_{mn}$ are z direction electric mode vectors.
@@ -201,6 +146,7 @@
       \subsubsection{Nonradiating cavity with perfect open-circuit wall equation of electric field}
         \indent With a calculation from boundary condition, it could be found that
           \begin{equation}
+            \label{OpenE}
             e_{mn}(x,y) = \frac{\chi_{mn}}{\sqrt{\epsilon abt}}\cos{k_nx}\cos{k_my}
           \end{equation}
         \indent with
@@ -216,6 +162,7 @@
       \subsubsection{Wavenumber}
         \indent The homogenous wave function and the eigenvalues must be complied with the seperation equation
         \begin{equation}
+          \label{kmn}
           k_{mn}^2 = \omega_{mn}^2\mu\epsilon = k_n^2 + k_m^2\\
         \end{equation}
         \indent in the case of nonradiating cavity
@@ -248,14 +195,134 @@
           A_{mn} = \frac{j\sqrt{\mu\epsilon}k}{k^2-k_{mn}^2} \int\int\int\vv{J} \cdot \vv{e}_{mn} dv
         \end{equation}
         \begin{equation}
+          \label{ModeCoeff}
           A_{mn} = jI_0 \sqrt{\frac{\mu t}{ab}} \frac{k\chi_{mn}}{k^2-k_{mn}^2} G_{mn} \cos{k_my_0}\cos{k_nx_0}
         \end{equation}
-
+        \indent where
         \begin{equation}
-          rrr
+          G_{mn} = \frac{\sin(n\pi d_x/2a)}{n\pi d_x/2a}\frac{\sin(m\pi d_y/2b)}{m\pi d_y/2b}
         \end{equation}
+        \indent and
+        \begin{equation}
+          k_{mn} = \widetilde{\omega}\sqrt{\mu\epsilon}
+        \end{equation}
+        \indent $\widetilde{\omega}$ is the complex resonance frequency of the $mn$th mode which could found by \ref{kmn}
 
+        \subsubsection{Complete Electric Field form}
+          \indent After combining \ref{GeneralE} \ref{OpenE} \ref{ModeCoeff} altogether, the complete electric field form will be
+          \begin{equation}
+            E_z(x,y) = jI_0Z_0k \sum_{m=0}^{\infty} \sum_{n=0}^{\infty} \frac{\psi_{mn}(x,y)\psi_{mn}(x_0,y_0)}{k^2-k_{mn}^2}G_{mn}
+          \end{equation}
+        
+          \indent where $Z_0 = \sqrt{\mu}{\epsilon}$, $k = \omega\sqrt{\mu\epsilon}$, $k_{mn}^2 = k_{m}^2 + k_{n}^2$ and
+          \begin{eqnarray}
+            \psi_{mn} &=& \frac{\chi_{mn}}{\sqrt{ab}}\cos{k_nx}\cos{k_my} \nonumber \\
+                      &=& \frac{\chi_{mn}}{\sqrt{ab}}\cos{\frac{n\pi x}{a}}\cos{\frac{m\pi y}{b}}
+          \end{eqnarray}
+        \subsubsection{Voltage at the feeding point}
+          \indent From $E = - \nabla V$, or rewrite as $V = -Ed$, the voltage at the feeding point will be
+          \begin{eqnarray}
+              V_{in} &=& -tE_z(x_0,y_0) \nonumber \\
+                    &=& -jI_0Z_0k \sum_{m=0}^{\infty} \sum_{n=0}^{\infty} \frac{\psi_{mn}^2(x_0,y_0)}{k^2-k_{mn}^2} G_{mn}
+          \end{eqnarray}
+        \subsubsection{Input Resistance}
+          \indent From Ohm's law, $V = IR$, the input impedance is
+          \begin{equation}
+            Z_{in} = \frac{V_{in}}{I_0} = -jZ_0k \sum_{m=0}^{\infty} \sum_{n=0}^{\infty} \frac{\psi_{mn}^2(x_0,y_0)}{k^2-k_{mn}^2} G_{mn}
+          \end{equation}
+        
+        \subsubsection{Summary}
+          \indent From this model, cavity model, it's found that this has more accurary than the transmission line
+                  because it has less approximation and it has more calculation complexity
+        
+  \newpage
+      \subsection{Radiation Pattern of Rectangular Patch}
+        \begin{figure}[ht]
+          \includegraphics{microstrip_rad.png}
+          \centering
+          \caption{Geometry Far-field pattern of a rectangular microstrip \cite{CaM:81}}
+        \end{figure}
+        \indent This section will show the far-field radiation pattern of a rectangular microstrip patch on $TM_{10}$ mode at the radiating edge\cite{CaM:81}
+        \begin{equation}
+          E_{\theta} = - \frac{jV_0k_0ae^{-jk_0r}}{\pi r} \cos(kt\cos\theta) \frac{\sin[k_0 \frac{a}{2} \sin\theta\sin\phi]}{k_0 \frac{a}{2} \sin\theta\sin\phi}\cos(k_0\frac{b}{2}\sin{\theta}\cos{\phi})\cos{\phi}, (0 \leq \theta \leq \frac{\pi}{2})
+        \end{equation}
+        \begin{equation}
+          E_{\phi} = \frac{jV_0k_0ae^{-jk_0r}}{\pi r} \cos(kt\cos\theta) \frac{\sin[k_0 \frac{a}{2} \sin\theta\sin\phi]}{k_0 \frac{a}{2} \sin\theta\sin\phi}\cos(k_0\frac{b}{2}\sin{\theta}\cos{\phi})\cos{\theta}\sin{\phi}, (0 \leq \theta \leq \frac{\pi}{2})
+        \end{equation}
+      
+  \newpage
 
+    \subsection{Q Factor}
+      \indent There are 4 main loss that should be considered\cite{NoK:05}
+      \begin{itemize}
+        \item $Q_{rad}$ is radiation loss due to a loss which propagates into a space
+          \begin{equation}
+            %\begin{aligned}
+              Q_{rad} = \frac{3}{16}\frac{\epsilon_r}{p}\frac{a_e}{b_e}\frac{\lambda_0}{h}\frac{1}{1-\frac{1}{\epsilon_r\mu_r}+\frac{2}{5\epsilon_r^2\mu_{r}^2}}
+            %\end{aligned}
+          \end{equation}
+          \indent where $a_e$,$b_e$,$h$ is the effective length, width and thickness of the antenna respectively,
+          $p$ is the ratio of the power that radiated by the patch antenna to the power radiated by an equivalent dipole\cite{NoK:05}
+        \item $Q_{sw}$ is surface-wave loss which represents the amount of power coupled into space waves
+          \begin{equation}
+            Q_{sw} = Q_{rad}(\frac{\eta_r^0}{1-\eta_r^0})
+          \end{equation}
+          \indent where $\eta_r^0$ is the radiation efficiency without dielectric or conductor loss
+        \item $Q_d$ is dielectric loss which defined as the ratio (or angle in a complex plane) of the lossy reaction to the electric field E in the curl equation to the lossless reaction
+          \begin{equation}
+            Q_d = \frac{1}{\tan\delta}
+          \end{equation}
+        \item $Q_c$ is metalization loss
+        \begin{equation}
+          Q_c = h\sqrt{\mu\pi{f}\sigma}
+        \end{equation}
+      \end{itemize}
+      \indent The total quality factor of the antenna can be given by using this formula.
+      \begin{equation}
+        \frac{1}{Q} = \frac{1}{Q_{rad}} + \frac{1}{Q_{sw}} + \frac{1}{Q_d} + \frac{1}{Q_c}
+      \end{equation}
+
+  \newpage
+
+  \subsection{Fringing Effect of the Microstrip Antenna}
+    \indent Because of fringing effect, this will cause many phenomenas such as Effective length extension, 
+            dielectric constant distortion and resonance frequency distortion\cite{CoB:05}
+    
+    \subsubsection{Effective Length Extension}
+      \begin{figure}[ht]
+        \includegraphics{fringingeffect.png}
+        \centering
+        \caption{The fringing effect that cause to length extension}
+      \end{figure}
+      \indent The length is extended because of fringing effect, that spreading at the edge of all sides so
+              $L_{eff} = L + 2\Delta L$\cite{CoB:05} 
+      \begin{equation}
+        \frac{\Delta l}{h}=0.412\frac{(\epsilon_{r(eff)}+0.3)(\frac{W}{h} + 0.264)}{(\epsilon_{r(eff)}-0.258)(\frac{W}{h} + 0.8)}
+      \end{equation}
+
+    \subsubsection{Dielectric Constant Distortion}
+      \begin{figure}[ht]
+        \includegraphics{dielectivef.png}
+        \centering
+        \caption{The fringing effect that cause to length extension}
+      \end{figure}
+      \indent Due to the electric field is not only happened inside the microstrip line, there's a leakage electric field in the air,
+              so the dielectric that will be used for calculating will need to be reconsidered as follow\cite{CoB:05}
+      \begin{equation}
+        \epsilon_{reff} = \frac{\epsilon_{r} + 1}{2} + \frac{\epsilon_{r} - 1}{2}[1 + 12\frac{h}{W}]^{-0.5}
+      \end{equation}
+
+    \subsubsection{Resonance frequency distortion}
+        \indent In $TM_{010}$ mode, the resonant frequency is given by
+        \begin{equation}  
+          f_{r(010)} =  \frac{1}{2 L\sqrt{\epsilon_{r}}\sqrt{\epsilon_{\mu_{0}\epsilon_{0}}}}= \frac{\upsilon_{0}}{2L\sqrt{\epsilon_{r}}}
+        \end{equation}
+        \indent With fringing effect, the equation will be given by
+        \begin{equation} 
+          f_{r(010)} =  \frac{1}{2 L_{eff}\sqrt{\epsilon_{r(eff))}}\sqrt{\epsilon_{\mu_{0}\epsilon_{0}}}}=\frac{1}{2(L + 2\Delta L)\sqrt{\epsilon_{r(eff)}}\sqrt{\epsilon_{\mu_{0}\epsilon_{0}}}}
+        \end{equation} 
+  
+  \newpage
 
     \subsection{Phased Array Antena}
       In phased array antenna principle, there are 2 main factor in the equations. First one is an element factor which is the factor that come from only one antenna itself and the another factor is called array factor which is come from the effect of multiple antennas combining together.
@@ -273,7 +340,7 @@
         \indent $d$ is a distance of each antenna.\\
         \indent $\vartheta$ is a wavefront angle
 
-  \pagebreak
+  \newpage
 
   \section{Preliminary results}
     \indent This project results will consist of
@@ -281,15 +348,14 @@
     2) an phased antenna that could steer its direction to the desired point 
     
     \subsection{Simulation Application}
-    \indent By using all the parameters that required to design the antenna, this simulation application will provide
-    all the data from the algorithm that was proposed from the past. There are many techniques to simulate the antenna
-    as Method of Moments(MoM) or Numerical Method. In order to inspect on its correctness, the standard simulation might
-    be required. Consequently, the antenna results is expected to have similar outcomes as well.
-
-    
+      \indent By using all the parameters that required to design the antenna, this simulation application will provide
+              all the data from the algorithm that was proposed from the past. There are many techniques to simulate the antenna
+              as Finite Element(FE), Method of Moments(MoM), or Numerical Method. However, the technique that will be used is one
+              of those. In order to inspect on its correctness, the standard simulation application will be required to 
+              compare. Consequently, the antenna results is expected to have similar outcomes as well.
     
     \subsection{Microstrip Antenna}
-      \indent The result from a patch antenna should be have 
+      \indent It's expected that a patch antenna should be have an impedance of zero Ohm at 5.6 GHz frequency
       \begin{figure}[ht]
         \includegraphics{Impedance.png}
         \centering
@@ -300,7 +366,7 @@
       \begin{figure}[ht]
         \includegraphics{Radiation_pattern}
         \centering
-        \caption{The designed antenna's radiation pattern should have clear directivity}
+        \caption{The designed antenna's radiation pattern like the analysis}
         %\label{fig:2}
       \end{figure}
 
@@ -333,7 +399,7 @@
 
     \subsection{Expected outcomes}
       \indent It's expected that the simulation application and the application that come from other author
-      will have similar results. Also, the physical device will have a preliminary result like those simulation
+      will have similar results. Also, the physical device should have a preliminary result like those simulation
       applications as well.
   
     \newpage

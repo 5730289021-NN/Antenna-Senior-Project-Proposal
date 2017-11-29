@@ -273,6 +273,21 @@ INPUT ./figures/cavitymodel.png
 INPUT ./figures/cavitymodel.png
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss8.tfm
+INPUT figures/microstrip_rad.png
+INPUT ./figures/microstrip_rad.png
+INPUT ./figures/microstrip_rad.png
+INPUT ./figures/microstrip_rad.png
+INPUT ./figures/microstrip_rad.png
+INPUT figures/fringingeffect.png
+INPUT ./figures/fringingeffect.png
+INPUT ./figures/fringingeffect.png
+INPUT ./figures/fringingeffect.png
+INPUT ./figures/fringingeffect.png
+INPUT figures/dielectivef.png
+INPUT ./figures/dielectivef.png
+INPUT ./figures/dielectivef.png
+INPUT ./figures/dielectivef.png
+INPUT ./figures/dielectivef.png
 INPUT figures/Impedance.png
 INPUT ./figures/Impedance.png
 INPUT ./figures/Impedance.png
