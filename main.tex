@@ -10,6 +10,7 @@
 \usepackage{amsmath} % for large blaces
 \usepackage{esvect} % easy vector
 \usepackage{etoolbox} % for bibliography
+\usepackage{pdflscape} %landscape
 \patchcmd{\thebibliography}{\section*}{\section}{}{}
 
 \graphicspath{{figures/}} % create a director 'figures' in your local dir and all pics are kept here
@@ -36,12 +37,51 @@
   \tableofcontents
   \newpage
   \section{Introduction}
-    \indent Nowadays, antennas have been using in every wireless communication systems. It has been found out that microstrip patch is one of the most popular\cite{AkS} in the world. Also, the patch antenna is cost-effective and easy to fabricate\cite{AtT}. Many design approaches have been revealed for antenna engineers to follow the procedure. In order to obtain the precise dimension, a deep analysis might've been engaged.
-    \indent A phased array is the set of antennas that could be a formation as a line or a planar which could steer its beam electrically\cite{CoB:05} which means that the direction of the antenna can be controlled without moving any of the mechanic parts. Therefore, this proposal is aiming at two of very interesting technologies in this era.
+    %Requirement
+    \indent The advances of technologies now ahead through now wouldn't be happened without a communication systems.
+            In such today, wireless communication is covering almost everywhere in the world. One of the most important
+            thing in the communication system is the antenna. Because it could be able to radiate or receive power into the air.
+            With these abilities, we may use it to send or receive those infomation that we want to. As we know, just a wire
+            could be used as an antenna technically. However, its property may not be good for every requirement or application.
 
+    %Frequency        
+    \indent The freedom of using frequency bands bring us to the world of technologies. Back to 1947, in the International Telecommunications
+            Conference of the ITU in Atlantic City established the first lot of ISM(Industrial, Scientific and Medical) bands which allows us
+            to use those frequency without asking for a permission. For example, the microwave oven, we never have to ask for any government's 
+            allowance to use the microwave which radiates the electromagnetic wave at the frequency of 2.45 GHz to our food because this 
+            frequency is in ISM bands.
+
+    %Directivity
+    \indent There are many methods to increase the range of the antenna. The easiest one is increasing more power. However, if we just want
+            to send a message from a station to another station, there will be a huge power loss on the air at the direction that we don't
+            really need to send to. In a good practical, engineers design antennas that their property is focusing on only one direction which
+            is called Directivity. Therefore, a high directivity antenna can be able to send more distance than the ordinary one.
+
+    %Phased Array Antenna
+    \indent Considering a droplet drops on the surface of the water, there will be a circular wave spreading out from the origin.
+            If there are multiple droplets in a row, those wave will be constructed and destructed depends on location and it'll
+            reform like a seacoast wave. So this will make a more powerful wave from 2 sources. Moreover, the direction can also
+            be changed by controling how droplets fall onto the surface. The same as the array of antennas, if we can control each
+            element's phase so we will be able to control antenna's directivity upon our desire. 
+
+    %Easy to use & Size
+    \indent If we want to make a device that everyone agrees on carrying to everywhere, basically, it must be small, thin and cheap.
+            To response to this demand, there is a flat composite material which composed of woven fiberglass cloth available in the market.
+            It's FR4(a grade designation assigned to glass-reinforced epoxy laminate sheets, tubes, rods and printed circuit boards).
+            Engineers usually uses FR4 as a microstrip. It could be any type of microwave circuits including antennas.
+    
+    %Summary
+    \indent Therefore, there are a lot of basic constraints up depends on which application we use. As from the title of this proposal,
+            Analysis and Design of Planar Phased Array Antenna for 5 GHz Applications, this project consists reviewing the
+            past literature, derived formula, empirical formula and try to using all of these knowledges to design the array of antenna with
+            phase-controlled at the ISM band(5.8 GHz)
+             
   \section{Objectives}
-    \indent The propose of this work is mainly focused on analyzing and designing the 5.6 GHz planar phased array antenna based on methods which have been analyzed, formulated or derived in the past. 
+    \indent This project's objective consists of several works combining together.  
+    %\indent The propose of this work mainly focus on analyzing and designing the 5.6 GHz planar phased array antenna based on methods which have been analyzed, formulated or derived in the past. s
 
+  \newpage
+  
   \section{Methodology}
     \indent This section will provide a full analysis of designing a microstrip antenna and a phased array antenna.
 
@@ -372,7 +412,7 @@
         %\label{fig:2}
       \end{figure}
 
-  \pagebreak
+  \newpage
 
     \subsection{Array Antenna Patern}
       \begin{figure}[ht]
@@ -389,24 +429,33 @@
         %\label{fig:4}
       \end{figure}
 
-  \pagebreak
+  \newpage
 
   \section{Project overview}
     \subsection{Scope of work}
       \begin{itemize}
         \item An analysis of a microstrip antenna and phased array antenna
         \item A basic simulation application for finding antennas' radiation pattern
-        \item A physical antenna device with its test result.
+        \item A physical planar phased array microstrip patch antenna device with its test result.
       \end{itemize}
 
     \subsection{Expected outcomes}
       \indent It's expected that, the simulation application and the application that come from other author
       will have similar results. Also, the physical device should have a preliminary result like those simulation
       applications as well.
-    
-    \subsection{}
   
-    \newpage
+  \newpage
+    \begin{landscape}  
+    \subsection{Project Plan}
+      \begin{figure}[ht]
+        \includegraphics{gantt.png}
+        \centering
+        \caption{The project plan for the phased array antenna project}
+        %\label{fig:1}
+      \end{figure}
+    \end{landscape}
+  
+  \newpage
 
   \bibliography{ref} 
   \bibliographystyle{ieeetran}
