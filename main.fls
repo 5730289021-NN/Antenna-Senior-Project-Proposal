@@ -267,6 +267,11 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm
 INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
 OUTPUT main.toc
+INPUT figures/flowchart_ml.png
+INPUT ./figures/flowchart_ml.png
+INPUT ./figures/flowchart_ml.png
+INPUT ./figures/flowchart_ml.png
+INPUT ./figures/flowchart_ml.png
 INPUT figures/tmmodel.png
 INPUT ./figures/tmmodel.png
 INPUT ./figures/tmmodel.png
