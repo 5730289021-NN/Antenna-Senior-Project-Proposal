@@ -1,36 +1,27 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Objectives}{}% 2
 \BOOKMARK [1][-]{section.3}{Methodology}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Basic Dimension Design of The Microstrip Antenna}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Transmission Line Model}{section.3}% 5
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Slot admittance}{subsection.3.2}% 6
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Characteristic admittance}{subsection.3.2}% 7
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Total Admittance \046 Resistance at Resonance frequency}{subsection.3.2}% 8
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Resonance frequency}{subsection.3.2}% 9
-\BOOKMARK [3][-]{subsubsection.3.2.5}{Summary}{subsection.3.2}% 10
-\BOOKMARK [2][-]{subsection.3.3}{Cavity Line Model}{section.3}% 11
-\BOOKMARK [3][-]{subsubsection.3.3.1}{General form of electric field}{subsection.3.3}% 12
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Nonradiating cavity with perfect open-circuit wall equation of electric field}{subsection.3.3}% 13
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Wavenumber}{subsection.3.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Nonradiating cavity with perfect open-circuit wall equation of magnetic field}{subsection.3.3}% 15
-\BOOKMARK [3][-]{subsubsection.3.3.5}{Mode Coefficient}{subsection.3.3}% 16
-\BOOKMARK [3][-]{subsubsection.3.3.6}{Complete Electric Field form}{subsection.3.3}% 17
-\BOOKMARK [3][-]{subsubsection.3.3.7}{Voltage at the feeding point}{subsection.3.3}% 18
-\BOOKMARK [3][-]{subsubsection.3.3.8}{Input Resistance}{subsection.3.3}% 19
-\BOOKMARK [3][-]{subsubsection.3.3.9}{Summary}{subsection.3.3}% 20
-\BOOKMARK [2][-]{subsection.3.4}{Radiation Pattern of Rectangular Patch}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.5}{Q Factor}{section.3}% 22
-\BOOKMARK [2][-]{subsection.3.6}{Fringing Effect of the Microstrip Antenna}{section.3}% 23
-\BOOKMARK [3][-]{subsubsection.3.6.1}{Effective Length Extension}{subsection.3.6}% 24
-\BOOKMARK [3][-]{subsubsection.3.6.2}{Dielectric Constant Distortion}{subsection.3.6}% 25
-\BOOKMARK [3][-]{subsubsection.3.6.3}{Resonance frequency distortion}{subsection.3.6}% 26
-\BOOKMARK [2][-]{subsection.3.7}{Phased Array Antena}{section.3}% 27
-\BOOKMARK [1][-]{section.4}{Preliminary results}{}% 28
-\BOOKMARK [2][-]{subsection.4.1}{Simulation Application}{section.4}% 29
-\BOOKMARK [2][-]{subsection.4.2}{Microstrip Antenna}{section.4}% 30
-\BOOKMARK [2][-]{subsection.4.3}{Array Antenna Patern}{section.4}% 31
-\BOOKMARK [1][-]{section.5}{Project overview}{}% 32
-\BOOKMARK [2][-]{subsection.5.1}{Scope of work}{section.5}% 33
-\BOOKMARK [2][-]{subsection.5.2}{Expected outcomes}{section.5}% 34
-\BOOKMARK [2][-]{subsection.5.3}{Project Plan}{section.5}% 35
-\BOOKMARK [1][-]{section.6}{References}{}% 36
+\BOOKMARK [2][-]{subsection.3.1}{Structure of the Microstrip Patch Antenna}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Radiation pattern of Rectangular Microstrip Patch Antenna}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Basic Dimension Design of The Microstrip Antenna}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Example}{subsection.3.3}% 7
+\BOOKMARK [2][-]{subsection.3.4}{Transmission Line Model}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Slot admittance}{subsection.3.4}% 9
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Characteristic admittance}{subsection.3.4}% 10
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Total Admittance \046 Resistance at Resonance frequency}{subsection.3.4}% 11
+\BOOKMARK [3][-]{subsubsection.3.4.4}{Resonance frequency}{subsection.3.4}% 12
+\BOOKMARK [3][-]{subsubsection.3.4.5}{Summary}{subsection.3.4}% 13
+\BOOKMARK [2][-]{subsection.3.5}{Fringing Effect of the Microstrip Antenna}{section.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Effective Length Extension}{subsection.3.5}% 15
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Dielectric Constant Distortion}{subsection.3.5}% 16
+\BOOKMARK [3][-]{subsubsection.3.5.3}{Resonance frequency distortion}{subsection.3.5}% 17
+\BOOKMARK [2][-]{subsection.3.6}{Phased Array Antena}{section.3}% 18
+\BOOKMARK [1][-]{section.4}{Preliminary results}{}% 19
+\BOOKMARK [2][-]{subsection.4.1}{Simulation Application}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.2}{Microstrip Antenna}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.3}{Array Antenna Patern}{section.4}% 22
+\BOOKMARK [1][-]{section.5}{Project overview}{}% 23
+\BOOKMARK [2][-]{subsection.5.1}{Scope of work}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.2}{Expected outcomes}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.3}{Project Plan}{section.5}% 26
+\BOOKMARK [1][-]{section.6}{References}{}% 27

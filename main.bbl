@@ -21,6 +21,15 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{KFL:10}
+K.~M.~L. Kai Fong~Lee, \emph{Microstrip Patch Antennas}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Imperial College Press, 2010.
+
+\bibitem{CaM:81}
+K.~Carver and J.~Mink, ``Microstrip antenna technology,'' \emph{IEEE
+  Transactions on Antennas and Propagation}, vol.~29, no.~1, pp. 2--24, Jan
+  1981.
+
 \bibitem{NoK:05}
 N.~Kinayman, \emph{Modern Microwave Circuits}.\hskip 1em plus 0.5em minus
   0.4em\relax Artech House, 2005.
@@ -28,10 +37,5 @@ N.~Kinayman, \emph{Modern Microwave Circuits}.\hskip 1em plus 0.5em minus
 \bibitem{CoB:05}
 C.~A. Balanis, \emph{Antenna Theory: Analysis and Design}.\hskip 1em plus 0.5em
   minus 0.4em\relax Wiley-Interscience, 2005.
-
-\bibitem{CaM:81}
-K.~Carver and J.~Mink, ``Microstrip antenna technology,'' \emph{IEEE
-  Transactions on Antennas and Propagation}, vol.~29, no.~1, pp. 2--24, Jan
-  1981.
 
 \end{thebibliography}

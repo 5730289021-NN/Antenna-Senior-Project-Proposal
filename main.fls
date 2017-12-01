@@ -201,6 +201,8 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/pdflscape.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/pdflscape.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/lscape.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/lscape.sty
+INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/latex/was/gensymb.sty
+INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/tex/latex/was/gensymb.sty
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
@@ -265,30 +267,48 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm
-INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
 OUTPUT main.toc
+INPUT C:/Users/noraw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
 INPUT figures/flowchart_ml.png
 INPUT ./figures/flowchart_ml.png
 INPUT ./figures/flowchart_ml.png
 INPUT ./figures/flowchart_ml.png
 INPUT ./figures/flowchart_ml.png
-INPUT figures/tmmodel.png
-INPUT ./figures/tmmodel.png
-INPUT ./figures/tmmodel.png
-INPUT ./figures/tmmodel.png
-INPUT ./figures/tmmodel.png
-INPUT figures/cavitymodel.png
-INPUT ./figures/cavitymodel.png
-INPUT ./figures/cavitymodel.png
-INPUT ./figures/cavitymodel.png
-INPUT ./figures/cavitymodel.png
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss8.tfm
+INPUT figures/selfmadepatch.png
+INPUT ./figures/selfmadepatch.png
+INPUT ./figures/selfmadepatch.png
+INPUT ./figures/selfmadepatch.png
+INPUT ./figures/selfmadepatch.png
 INPUT figures/microstrip_rad.png
 INPUT ./figures/microstrip_rad.png
 INPUT ./figures/microstrip_rad.png
 INPUT ./figures/microstrip_rad.png
 INPUT ./figures/microstrip_rad.png
+INPUT figures/rad1.png
+INPUT ./figures/rad1.png
+INPUT ./figures/rad1.png
+INPUT ./figures/rad1.png
+INPUT ./figures/rad1.png
+INPUT figures/rad2.png
+INPUT ./figures/rad2.png
+INPUT ./figures/rad2.png
+INPUT ./figures/rad2.png
+INPUT ./figures/rad2.png
+INPUT figures/rad3.png
+INPUT ./figures/rad3.png
+INPUT ./figures/rad3.png
+INPUT ./figures/rad3.png
+INPUT ./figures/rad3.png
+INPUT figures/rad4.png
+INPUT ./figures/rad4.png
+INPUT ./figures/rad4.png
+INPUT ./figures/rad4.png
+INPUT ./figures/rad4.png
+INPUT figures/tmmodel.png
+INPUT ./figures/tmmodel.png
+INPUT ./figures/tmmodel.png
+INPUT ./figures/tmmodel.png
+INPUT ./figures/tmmodel.png
 INPUT figures/fringingeffect.png
 INPUT ./figures/fringingeffect.png
 INPUT ./figures/fringingeffect.png
@@ -334,8 +354,6 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
@@ -358,5 +376,3 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/esvect/vect10.pfb
-INPUT C:/Users/noraw/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/esvect/vect10.pfb

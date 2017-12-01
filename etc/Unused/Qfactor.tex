@@ -1,0 +1,32 @@
+
+    \subsection{Q Factor}
+    \indent There are 4 main loss that should be considered\cite{NoK:05}
+    \begin{itemize}
+      \item $Q_{rad}$ is radiation loss due to a loss which propagates into a space
+        \begin{equation}
+          %\begin{aligned}
+            Q_{rad} = \frac{3}{16}\frac{\epsilon_r}{p}\frac{a_e}{b_e}\frac{\lambda_0}{h}\frac{1}{1-\frac{1}{\epsilon_r\mu_r}+\frac{2}{5\epsilon_r^2\mu_{r}^2}}
+          %\end{aligned}
+        \end{equation}
+        \indent where $a_e$,$b_e$,$h$ is the effective length, width and thickness of the antenna respectively,
+        $p$ is the ratio of the power that radiated by the patch antenna to the power radiated by an equivalent dipole\cite{NoK:05}
+      \item $Q_{sw}$ is surface-wave loss which represents the amount of power coupled into space waves
+        \begin{equation}
+          Q_{sw} = Q_{rad}(\frac{\eta_r^0}{1-\eta_r^0})
+        \end{equation}
+        \indent where $\eta_r^0$ is the radiation efficiency without dielectric or conductor loss
+      \item $Q_d$ is dielectric loss which defined as the ratio (or angle in a complex plane) of the lossy reaction to the electric field E in the curl equation to the lossless reaction
+        \begin{equation}
+          Q_d = \frac{1}{\tan\delta}
+        \end{equation}
+      \item $Q_c$ is metalization loss
+      \begin{equation}
+        Q_c = h\sqrt{\mu\pi{f}\sigma}
+      \end{equation}
+    \end{itemize}
+    \indent The total quality factor of the antenna can be given by using this formula.
+    \begin{equation}
+      \frac{1}{Q} = \frac{1}{Q_{rad}} + \frac{1}{Q_{sw}} + \frac{1}{Q_d} + \frac{1}{Q_c}
+    \end{equation}
+
+\newpage

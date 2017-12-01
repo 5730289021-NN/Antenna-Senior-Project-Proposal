@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper,hidelinks]{article}
 \usepackage[text={6.5in,10in},centering,a4paper]{geometry}
 \usepackage{amssymb,amsmath} % Equations
 \usepackage{tabularx} % Tables
@@ -11,6 +11,9 @@
 \usepackage{esvect} % easy vector
 \usepackage{etoolbox} % for bibliography
 \usepackage{pdflscape} %landscape
+%\usepackage{textcomp}
+\usepackage{gensymb}
+
 \patchcmd{\thebibliography}{\section*}{\section}{}{}
 
 \graphicspath{{figures/}} % create a director 'figures' in your local dir and all pics are kept here
@@ -76,8 +79,9 @@
   \newpage
 
   \section{Objectives}
-    \indent The main objective of this project is to study about the analysis of the phased array antenna, and check whether the result is the
-            same. It consists of several tasks combining together.
+    \indent The main objective of this project is to study about the analysis of the microstrip phased array antenna, and compare whether the 
+            physical test result is the same to the theories. This project is consist of several tasks combining together.
+            
     \begin{itemize}
       \item Review past lituratures
       \item Compare techniques
@@ -101,24 +105,98 @@
     \newpage
     %\indent This section will provide a full analysis of designing a microstrip antenna and a phased array antenna.
     
-    \subsection{Basic Dimension Design of The Microstrip Antenna}
-      \indent a dimension of microstrip antenna can be designed easily with this expressions\cite{NoK:05}.
+    \subsection{Structure of the Microstrip Patch Antenna}
+      \begin{figure}[ht]
+        \includegraphics{selfmadepatch.png}
+          \centering
+          \caption{The structure of a microstrip patch antenna}
+      \end{figure}
+      
+      \indent Generally, the structure of a microstrip patch antenna is an antenna that was fabribated using
+              microstrip technique on a printed circuit board(PCB)\cite{KFL:10}. It consists 3 layer, a conducting
+              plate, substrate and a ground plane. The plate and ground plane is made of conductors but the
+              substrate is made of a glass-reinforced epoxy(for an FR4 plate). With this structure, a patch antenna 
+              can be made easily by using a cutter.
+    
+    \newpage
+
+    \subsection{Radiation pattern of Rectangular Microstrip Patch Antenna}
+      \begin{figure}[ht]
+        \includegraphics{microstrip_rad.png}
+        \centering
+        \caption{Geometry Far-field pattern of a rectangular microstrip \cite{CaM:81}}
+      \end{figure}
+      \indent The figure aboves show the far field radiation pattern of a rectangular microstrip patch on $TM_{10}$ mode 
+              at the radiating edge\cite{CaM:81} for the the corresponding rectangular microstrip equation.
       \begin{equation}
-        L = \frac{c}{2f_0\sqrt{\epsilon_r\mu_r}} - 2\Delta l 
-        W = \frac{c}{2f_0}
+        E_{\theta} = - \frac{jV_0k_0ae^{-jk_0r}}{\pi r} \cos(kt\cos\theta) \frac{\sin[k_0 \frac{a}{2} \sin\theta\sin\phi]}{k_0 \frac{a}{2} \sin\theta\sin\phi}\cos(k_0\frac{b}{2}\sin{\theta}\cos{\phi})\cos{\phi}, (0 \leq \theta \leq \frac{\pi}{2})
       \end{equation}
-      \indent where $L$ and $W$ are the dimensions of an antenna\\[1ex]
+      \begin{equation}
+        E_{\phi} = \frac{jV_0k_0ae^{-jk_0r}}{\pi r} \cos(kt\cos\theta) \frac{\sin[k_0 \frac{a}{2} \sin\theta\sin\phi]}{k_0 \frac{a}{2} \sin\theta\sin\phi}\cos(k_0\frac{b}{2}\sin{\theta}\cos{\phi})\cos{\theta}\sin{\phi}, (0 \leq \theta \leq \frac{\pi}{2})
+      \end{equation}
+      \indent From these equation, we could see that the antenna directivity is directional.
+              Furthermore, these graphical figure below indicate that the microstrip antenna is directional.
+      
+      \begin{figure}
+        \includegraphics{rad1.png}
+        \centering
+        \caption{Normalized E-plane far-field radiation pattern $E_\theta$ of the microstrip patch at $f$ = 2,300 MHz $(\phi = 0\degree, -90\degree < \theta < 90\degree)$ \cite{NoK:05}}
+      \end{figure}
+
+      \begin{figure}
+        \includegraphics{rad2.png}
+        \centering
+        \caption{Normalized H-plane far-field radiation pattern $E_\phi$ of the microstrip patch at $f$ = 2,300 MHz $(\phi = 0\degree, -90\degree < \theta < 90\degree)$ \cite{NoK:05}}
+      \end{figure}
+
+      \begin{figure}
+        \includegraphics{rad3.png}
+        \centering
+        \caption{Normalized far-field radiation pattern $E_\theta$ of the microstrip patch at $f$ = 2,300 MHz $(\theta = 0\degree, -180\degree < \phi < 180\degree)$ \cite{NoK:05}}
+      \end{figure}
+
+      \begin{figure}
+        \includegraphics{rad4.png}
+        \centering
+        \caption{Normalized far-field radiation pattern $E_\phi$ of the microstrip patch at $f$ = 2,300 MHz $(\theta = 90\degree, -180\degree < \theta < 180\degree)$ \cite{NoK:05}}
+      \end{figure}
+
+  \newpage
+
+    \subsection{Basic Dimension Design of The Microstrip Antenna}
+      \indent In order to determine a dimension of microstrip antenna for a given frequency can be designed
+              easily with this expressions\cite{NoK:05}.
+      \begin{equation}
+        a = \frac{c}{2f_0\sqrt{\epsilon_r\mu_r}} - 2\Delta l 
+      \end{equation}
+      \begin{equation}
+        b = \frac{c}{2f_0}
+      \end{equation}
+      \indent where $a$ and $b$ are the dimensions of an antenna\\[1ex]
       \indent $f_0$ is the resonance frequency\\[1ex]
       \indent $\epsilon_r$ is the relative dielectric constant\\[1ex]
       \indent $\mu_r$ is the relative magnetic constant\\[1ex]
       \indent $c$ is the speed of light in free space\\[1ex]
-      \indent $\Delta l$ is the fringing effect at the edge of the antenna\\[3ex]
+      \indent $\Delta l$ is the fringing effect at the edge of the antenna*\\[3ex]
       \indent However from \cite{CoB:05} the best width should be
       \begin{equation}
-        W = \frac {1} {2 f_r \sqrt{\mu_{0} \epsilon_{0}}}\sqrt{\frac{2}{\epsilon_{r} + 1}} = \frac{\upsilon_{0}}{2f_{r}}\sqrt{\frac{2}{\epsilon_{r} + 1}}
+        b = \frac {1} {2 f_r \sqrt{\mu_{0} \epsilon_{0}}}\sqrt{\frac{2}{\epsilon_{r} + 1}} = \frac{\upsilon_{0}}{2f_{r}}\sqrt{\frac{2}{\epsilon_{r} + 1}}
       \end{equation}
       \indent where $\upsilon_{0}$ is the free-space velocity of light
-    
+      
+      \subsubsection{Example}
+        \indent If we want to build a 5.8 GHz of microstrip patch antenna with $\epsilon_{r}  = 4.5$ and $\mu_{r} = 1$
+        \indent The length of the antenna would be without fringing effect and let 
+        \begin{equation}
+          a = \frac{3 \times 10^8}{2 \times 5.8 \times 10^9 \times \sqrt{4.5}} = 12 cm
+        \end{equation}
+
+        \begin{equation}
+          b = \frac{3 \times 10^8}{2 \times 5.8 \times 10^9} = 25 cm
+        \end{equation}
+      \indent \\[7ex]
+      \indent *Note that the fringing effect will be refered to at the Fringing Effect of the Microstrip Antenna section
+      
   \newpage
 
     \subsection{Transmission Line Model}
@@ -173,173 +251,7 @@
                 model is hardly to adapt with the other shape of the patch or. Also, this model is lack of accurate data.
                 In order to find more precise infomation about the antenna, the Cavity model will be introduced 
                 in the next section which is much more accurate than this one.\cite{CaM:81,NoK:05}
-  \newpage
-
-    \subsection{Cavity Line Model}
-    \indent The cavity model has more accurate formulation for the input impedance, resonance with a little
-            increase of mathematical complexity.\cite{CaM:81}
-    \begin{figure}[ht]
-      \label{cavitymodel}
-      \includegraphics{cavitymodel.png}
-      \centering
-      \caption{(a) Microstrip patch with inset coaxial feed
-               (b) Microstrip patch with inset transmission-line feed
-              }
-    \end{figure}
-
-      \subsubsection{General form of electric field}
-        \indent Considering a rectangular patch with width $a$ and length $b$ over a ground plane with $t$ substrate
-                thickness and a dielectric constant $\epsilon_r$. With the relatively short thickness of the substrate,
-                the electric field will be in z-direction with $TM_{mn}$ interior modes so that\cite{CaM:81}
-        \begin{equation}
-          \label{GeneralE}
-          E_z = \sum_m\sum_n A_{mn}e_{mn}(x,y)
-        \end{equation}
-        \indent where $A_{mn}$ are the mode amplitude coefficients and $e_{mn}$ are z direction electric mode vectors.
-        \indent However, the mode that is used in the antenna is just only $TM_{10}$ so the equation can easily write as
-        \begin{equation}
-           E_z = A_{10}e_{10}(x,y)
-        \end{equation}
-
-      \subsubsection{Nonradiating cavity with perfect open-circuit wall equation of electric field}
-        \indent With a calculation from boundary condition, it could be found that
-          \begin{equation}
-            \label{OpenE}
-            e_{mn}(x,y) = \frac{\chi_{mn}}{\sqrt{\epsilon abt}}\cos{k_nx}\cos{k_my}
-          \end{equation}
-        \indent with
-          \begin{equation}
-            \chi_{mn}=
-            \begin{cases}
-              1       , & m = 0\quad     \text{and}\quad  n = 0 \\
-              \sqrt{2}, & m = 0\quad     \text{ or }\quad  n = 0 \\
-              2       , & m \neq 0\quad  \text{and}\quad  n \neq 0
-            \end{cases}
-          \end{equation}
-
-      \subsubsection{Wavenumber}
-        \indent The homogenous wave function and the eigenvalues must be complied with the seperation equation
-        \begin{equation}
-          \label{kmn}
-          k_{mn}^2 = \omega_{mn}^2\mu\epsilon = k_n^2 + k_m^2\\
-        \end{equation}
-        \indent in the case of nonradiating cavity
-        \begin{equation}
-          k_{n} = \frac{n\pi}{a}\\
-          k_{m} = \frac{m\pi}{b}
-        \end{equation}
-
-      \subsubsection{Nonradiating cavity with perfect open-circuit wall equation of magnetic field}
-        \indent From Maxwell-Faraday equation
-        \begin{equation}
-          \nabla \times \vv{E} = - \frac {\partial{\vv B}} {\partial t}
-        \end{equation}
-        \indent or in phasor form,
-        \begin{equation}
-          \nabla \times \vv{E} = -j\omega{\vv B}
-        \end{equation}
-        \indent after substitute the electric field equation, the magnetic field will be
-        \begin{equation}
-           \vv{h}_{mn} = \frac{1}{j\omega\mu}\frac{\chi_{mn}}{\sqrt{\epsilon abt}}(\vv{x}k_m\cos{k_nx}\sin{k_my} - \vv{y}k_n\sin{k_n}{x}\cos{k_m}{y})
-        \end{equation}
-        \indent For nonradiating case, the boundary condition $\vv{n} \times \vv{h}_{mn} = 0$ is satisfied on every walls.
-                But, in radiating case, $\vv{h}_{mn}$ will not have a zero tangential on the cavity sidewall anymore.
-                However, those pertubation from radiating effect cause just a little error on $e_{mn}$\cite{CaM:81}
       
-      \subsubsection{Mode Coefficient}
-        \indent From z-direction current, with the current probe $I_{0}$ at the location $(x_0,y_0)$ as in the
-                figures illustrates in \ref{cavitymodel}. The coefficients from each mode can be obtained from
-        \begin{equation}
-          A_{mn} = \frac{j\sqrt{\mu\epsilon}k}{k^2-k_{mn}^2} \int\int\int\vv{J} \cdot \vv{e}_{mn} dv
-        \end{equation}
-        \begin{equation}
-          \label{ModeCoeff}
-          A_{mn} = jI_0 \sqrt{\frac{\mu t}{ab}} \frac{k\chi_{mn}}{k^2-k_{mn}^2} G_{mn} \cos{k_my_0}\cos{k_nx_0}
-        \end{equation}
-        \indent where
-        \begin{equation}
-          G_{mn} = \frac{\sin(n\pi d_x/2a)}{n\pi d_x/2a}\frac{\sin(m\pi d_y/2b)}{m\pi d_y/2b}
-        \end{equation}
-        \indent and
-        \begin{equation}
-          k_{mn} = \widetilde{\omega}\sqrt{\mu\epsilon}
-        \end{equation}
-        \indent $\widetilde{\omega}$ is the complex resonance frequency of the $mn$th mode which could found by \ref{kmn}
-
-        \subsubsection{Complete Electric Field form}
-          \indent After combining \ref{GeneralE} \ref{OpenE} \ref{ModeCoeff} altogether, the complete electric field form will be
-          \begin{equation}
-            E_z(x,y) = jI_0Z_0k \sum_{m=0}^{\infty} \sum_{n=0}^{\infty} \frac{\psi_{mn}(x,y)\psi_{mn}(x_0,y_0)}{k^2-k_{mn}^2}G_{mn}
-          \end{equation}
-        
-          \indent where $Z_0 = \sqrt{\mu}{\epsilon}$, $k = \omega\sqrt{\mu\epsilon}$, $k_{mn}^2 = k_{m}^2 + k_{n}^2$ and
-          \begin{eqnarray}
-            \psi_{mn} &=& \frac{\chi_{mn}}{\sqrt{ab}}\cos{k_nx}\cos{k_my} \nonumber \\
-                      &=& \frac{\chi_{mn}}{\sqrt{ab}}\cos{\frac{n\pi x}{a}}\cos{\frac{m\pi y}{b}}
-          \end{eqnarray}
-        \subsubsection{Voltage at the feeding point}
-          \indent From $E = - \nabla V$, or rewrite as $V = -Ed$, the voltage at the feeding point will be
-          \begin{eqnarray}
-              V_{in} &=& -tE_z(x_0,y_0) \nonumber \\
-                    &=& -jI_0Z_0k \sum_{m=0}^{\infty} \sum_{n=0}^{\infty} \frac{\psi_{mn}^2(x_0,y_0)}{k^2-k_{mn}^2} G_{mn}
-          \end{eqnarray}
-        \subsubsection{Input Resistance}
-          \indent From Ohm's law, $V = IR$, the input impedance is
-          \begin{equation}
-            Z_{in} = \frac{V_{in}}{I_0} = -jZ_0k \sum_{m=0}^{\infty} \sum_{n=0}^{\infty} \frac{\psi_{mn}^2(x_0,y_0)}{k^2-k_{mn}^2} G_{mn}
-          \end{equation}
-        
-        \subsubsection{Summary}
-          \indent From this model, cavity model, it's found that this has more accurary than the transmission line
-                  because it has less approximation and it has more calculation complexity
-        
-  \newpage
-      \subsection{Radiation Pattern of Rectangular Patch}
-        \begin{figure}[ht]
-          \includegraphics{microstrip_rad.png}
-          \centering
-          \caption{Geometry Far-field pattern of a rectangular microstrip \cite{CaM:81}}
-        \end{figure}
-        \indent This section will show the far-field radiation pattern of a rectangular microstrip patch on $TM_{10}$ mode at the radiating edge\cite{CaM:81}
-        \begin{equation}
-          E_{\theta} = - \frac{jV_0k_0ae^{-jk_0r}}{\pi r} \cos(kt\cos\theta) \frac{\sin[k_0 \frac{a}{2} \sin\theta\sin\phi]}{k_0 \frac{a}{2} \sin\theta\sin\phi}\cos(k_0\frac{b}{2}\sin{\theta}\cos{\phi})\cos{\phi}, (0 \leq \theta \leq \frac{\pi}{2})
-        \end{equation}
-        \begin{equation}
-          E_{\phi} = \frac{jV_0k_0ae^{-jk_0r}}{\pi r} \cos(kt\cos\theta) \frac{\sin[k_0 \frac{a}{2} \sin\theta\sin\phi]}{k_0 \frac{a}{2} \sin\theta\sin\phi}\cos(k_0\frac{b}{2}\sin{\theta}\cos{\phi})\cos{\theta}\sin{\phi}, (0 \leq \theta \leq \frac{\pi}{2})
-        \end{equation}
-      
-  \newpage
-
-    \subsection{Q Factor}
-      \indent There are 4 main loss that should be considered\cite{NoK:05}
-      \begin{itemize}
-        \item $Q_{rad}$ is radiation loss due to a loss which propagates into a space
-          \begin{equation}
-            %\begin{aligned}
-              Q_{rad} = \frac{3}{16}\frac{\epsilon_r}{p}\frac{a_e}{b_e}\frac{\lambda_0}{h}\frac{1}{1-\frac{1}{\epsilon_r\mu_r}+\frac{2}{5\epsilon_r^2\mu_{r}^2}}
-            %\end{aligned}
-          \end{equation}
-          \indent where $a_e$,$b_e$,$h$ is the effective length, width and thickness of the antenna respectively,
-          $p$ is the ratio of the power that radiated by the patch antenna to the power radiated by an equivalent dipole\cite{NoK:05}
-        \item $Q_{sw}$ is surface-wave loss which represents the amount of power coupled into space waves
-          \begin{equation}
-            Q_{sw} = Q_{rad}(\frac{\eta_r^0}{1-\eta_r^0})
-          \end{equation}
-          \indent where $\eta_r^0$ is the radiation efficiency without dielectric or conductor loss
-        \item $Q_d$ is dielectric loss which defined as the ratio (or angle in a complex plane) of the lossy reaction to the electric field E in the curl equation to the lossless reaction
-          \begin{equation}
-            Q_d = \frac{1}{\tan\delta}
-          \end{equation}
-        \item $Q_c$ is metalization loss
-        \begin{equation}
-          Q_c = h\sqrt{\mu\pi{f}\sigma}
-        \end{equation}
-      \end{itemize}
-      \indent The total quality factor of the antenna can be given by using this formula.
-      \begin{equation}
-        \frac{1}{Q} = \frac{1}{Q_{rad}} + \frac{1}{Q_{sw}} + \frac{1}{Q_d} + \frac{1}{Q_c}
-      \end{equation}
-
   \newpage
 
   \subsection{Fringing Effect of the Microstrip Antenna}
@@ -456,9 +368,11 @@
       \end{itemize}
 
     \subsection{Expected outcomes}
-      \indent It's expected that, the simulation application and the application that come from other author
-      will have similar results. Also, the physical device should have a preliminary result like those simulation
-      applications as well.
+      \indent It's expected that the physical device should have a preliminary result like those simulation
+      applications, also, the simulation application and the application that come from other author
+      will have similar results as well.
+      
+       
   
   \newpage
     \begin{landscape}  
